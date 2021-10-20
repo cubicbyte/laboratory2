@@ -77,3 +77,11 @@ def shiftList(list):
     for i in range(length - 1):
         shifted.append(list[i])
     return shifted
+
+""" Функция для нахождения наименьшего общего кратного двух чисел """
+def getLeastComMult(a, b):
+    i = min(a, b)
+    while True:
+        if i%a == 0 and i%b == 0:
+            return i
+        i += 1
