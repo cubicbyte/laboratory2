@@ -14,4 +14,5 @@ print("Пять наименьших элементов списка:", getMinFi
 print("Пять наибольших элементов списка:", getMaxFive(list))
 print("Среднее арифметическое:", getAvg(list))
 print("Неповторяющиеся элементы списка:", getUnique(list))
-
+print("Количество неуникальных элементов списка:", getNotUniqueCount(list))
+print("Сдвинутый массив:", shiftList(list))

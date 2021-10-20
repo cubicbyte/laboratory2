@@ -61,3 +61,19 @@ def getUnique(list):
         if not el in unique:
             unique.append(el)
     return unique
+
+""" Функция для нахождения кол-ва повторяющихся элементов списка """
+def getNotUniqueCount(list):
+    unique = getUnique(list)
+    uniqueLen = len(unique)
+    listLen = len(list)
+    """ Отнимаем кол-во уникальных элементов от общего количества """
+    return listLen - uniqueLen
+
+""" Функция для сдвига списка """
+def shiftList(list):
+    length = len(list)
+    shifted = [list[length - 1]]
+    for i in range(length - 1):
+        shifted.append(list[i])
+    return shifted
